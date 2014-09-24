@@ -19,7 +19,8 @@
         "psr-4": {"app\\oauth2\\": "src/"}
     },
 	"require": {
-		"php": ">=5.4.0"
+		"php": ">=5.4.0",
+		"bshaffer/oauth2-server-php": "dev-develop"
 	},
 	"require-dev": {
 		"satooshi/php-coveralls": "dev-master",
