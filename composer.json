@@ -1,6 +1,6 @@
 {
 	"name": "idealistsoft/framework-oauth2",
-	"description": "Auth module for Idealist Framework",
+	"description": "OAuth2 module for Idealist Framework",
 	"type": "library",
 	"keywords": ["idealist","framework","auth","authentication","oauth","oauth2","jwt"],
 	"license": "MIT",
