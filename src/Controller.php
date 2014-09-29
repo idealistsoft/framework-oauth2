@@ -76,14 +76,14 @@ class Controller
         $response = new Response();
 
         if ($resource->verifyResourceRequest($request, $response)) {
+            $tokenData = $resource->getResourceController()->getToken();
+
             // replace current user with the user from the access token
-            $this->app['user'] = function () use ($resource) {
-                $tokenData = $resource->getResourceController()->getToken();
+            $userModel = Auth::USER_MODEL;
+            $user = $this->app['user'] = new $userModel($tokenData['user_id'], true);
 
-                $userModel = Auth::USER_MODEL;
-
-                return new $userModel($tokenData['user_id'], true);
-            };
+            // use the authenticated user as the requester for model permissions
+            Model::configure(['requester' => $user]);
         } else {
             $response->send();
             exit;
