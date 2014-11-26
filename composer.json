@@ -23,7 +23,7 @@
 		"bshaffer/oauth2-server-php": "dev-develop"
 	},
 	"require-dev": {
-		"idealistsoft/framework-bootstrap": "~1.0",
+		"idealistsoft/framework-bootstrap": "~1.1",
 		"idealistsoft/framework-auth": "dev-master",
 		"satooshi/php-coveralls": "0.6.1",
 		"robmorgan/phinx": "~0.3"
