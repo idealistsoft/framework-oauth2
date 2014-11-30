@@ -7,7 +7,6 @@ use OAuth2\Storage\ClientCredentialsInterface;
 use OAuth2\Storage\PublicKeyInterface;
 use OAuth2\Storage\UserCredentialsInterface;
 use OAuth2\OpenID\Storage\UserClaimsInterface;
-
 use app\users\models\User;
 
 class IdealistStorage implements UserCredentialsInterface, ClientCredentialsInterface,
@@ -56,12 +55,12 @@ class IdealistStorage implements UserCredentialsInterface, ClientCredentialsInte
 
     public function getPublicKey($client_id = null)
     {
-        return file_get_contents(INFUSE_BASE_DIR . '/jwt_pubkey.pem');
+        return file_get_contents(INFUSE_BASE_DIR.'/jwt_pubkey.pem');
     }
 
     public function getPrivateKey($client_id = null)
     {
-        return file_get_contents(INFUSE_BASE_DIR . '/jwt_privkey.pem');
+        return file_get_contents(INFUSE_BASE_DIR.'/jwt_privkey.pem');
     }
 
     public function getEncryptionAlgorithm($client_id = null)
@@ -99,8 +98,9 @@ class IdealistStorage implements UserCredentialsInterface, ClientCredentialsInte
     public function getUserDetails($username)
     {
         // we can do this because checkUserCredentials will be called first
-        if ($this->user)
+        if ($this->user) {
             return ['user_id' => $this->user->id()];
+        }
 
         return false;
     }

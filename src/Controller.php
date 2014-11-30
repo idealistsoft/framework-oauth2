@@ -10,7 +10,6 @@ use OAuth2\Storage\JwtAccessToken as JwtAccessTokenStorage;
 use OAuth2\Request;
 use OAuth2\Response;
 use OAuth2\Server;
-
 use app\auth\libs\Auth;
 use app\oauth2\libs\IdealistStorage;
 
@@ -44,7 +43,7 @@ class Controller
             // no private key is necessary for the resource server
             $keyStorage = new Memory([
                 'keys' => [
-                    'public_key' => file_get_contents(INFUSE_BASE_DIR . '/jwt_pubkey.pem')]]);
+                    'public_key' => file_get_contents(INFUSE_BASE_DIR.'/jwt_pubkey.pem'), ], ]);
 
             $storage = new JwtAccessTokenStorage($keyStorage);
             $server->addStorage($storage, 'access_token');
@@ -53,8 +52,9 @@ class Controller
         };
 
         // attempt to authenticate the user when an API request is made
-        if ($req->isApi())
+        if ($req->isApi()) {
             $this->authenticateApiRequest();
+        }
     }
 
     public function token($req, $res)
@@ -67,7 +67,7 @@ class Controller
     public function tokenSignOut($req, $res)
     {
         // do nothing for now
-        $res->json(['success'=>true]);
+        $res->json(['success' => true]);
     }
 
     private function authenticateApiRequest()
