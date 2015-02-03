@@ -32,6 +32,6 @@ composer require infuse/oauth2
 
 The public and private key should each be stored in the base directory of your app.
 
-## Credit
+## Acknowledgements
 
 This project uses the awesome [oauth2-server-php](https://github.com/bshaffer/oauth2-server-php) library by Brent Shaffer.
