@@ -1,11 +1,13 @@
-framework-oauth2 [![Build Status](https://travis-ci.org/idealistsoft/framework-oauth2.png?branch=master)](https://travis-ci.org/idealistsoft/framework-oauth2)
+oauth2
 =============
 
-[![Coverage Status](https://coveralls.io/repos/idealistsoft/framework-oauth2/badge.png)](https://coveralls.io/r/idealistsoft/framework-oauth2)
-[![Latest Stable Version](https://poser.pugx.org/idealistsoft/framework-oauth2/v/stable.png)](https://packagist.org/packages/idealistsoft/framework-oauth2)
-[![Total Downloads](https://poser.pugx.org/idealistsoft/framework-oauth2/downloads.png)](https://packagist.org/packages/idealistsoft/framework-oauth2)
+[![Build Status](https://travis-ci.org/infusephp/oauth2.png?branch=master)](https://travis-ci.org/infusephp/oauth2)
+[![Coverage Status](https://coveralls.io/repos/infusephp/oauth2/badge.png)](https://coveralls.io/r/infusephp/oauth2)
+[![Latest Stable Version](https://poser.pugx.org/infuse/oauth2/v/stable.png)](https://packagist.org/packages/infuse/oauth2)
+[![Total Downloads](https://poser.pugx.org/infuse/oauth2/downloads.png)](https://packagist.org/packages/infuse/oauth2)
+[![HHVM Status](http://hhvm.h4cc.de/badge/infuse/oauth2.svg)](http://hhvm.h4cc.de/package/infuse/oauth2)
 
-OAuth2 module for Idealist Framework
+OAuth2 module for Infuse Framework
 
 ## Grant Types
 

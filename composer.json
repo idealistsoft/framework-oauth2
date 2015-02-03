@@ -1,8 +1,8 @@
 {
-	"name": "idealistsoft/framework-oauth2",
-	"description": "OAuth2 module for Idealist Framework",
+	"name": "infuse/oauth2",
+	"description": "OAuth2 module for Infuse Framework",
 	"type": "library",
-	"keywords": ["idealist","framework","auth","authentication","oauth","oauth2","jwt"],
+	"keywords": ["infuse","framework","auth","authentication","oauth","oauth2","jwt"],
 	"license": "MIT",
 	"authors": [
 		{
@@ -12,8 +12,8 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/idealistsoft/framework-oauth2/issues",
-		"source": "https://github.com/idealistsoft/framework-oauth2"
+		"issues": "https://github.com/infusephp/oauth2/issues",
+		"source": "https://github.com/infusephp/oauth2"
 	},
     "autoload": {
         "psr-4": {"app\\oauth2\\": "src/"}
@@ -23,8 +23,8 @@
 		"bshaffer/oauth2-server-php": "dev-develop"
 	},
 	"require-dev": {
-		"idealistsoft/framework-bootstrap": "dev-master",
-		"idealistsoft/framework-auth": "dev-master",
+		"infuse/bootstrap": "dev-master",
+		"infuse/auth": "dev-master",
 		"satooshi/php-coveralls": "0.6.1",
 		"robmorgan/phinx": "~0.3"
 	},
