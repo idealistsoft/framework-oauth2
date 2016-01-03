@@ -2,7 +2,7 @@
 
 namespace app\oauth2;
 
-use infuse\Model;
+use Infuse\Model;
 use OAuth2\GrantType\UserCredentials;
 use OAuth2\ResponseType\JwtAccessToken;
 use OAuth2\Storage\Memory;
